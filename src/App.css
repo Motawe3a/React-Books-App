@@ -181,7 +181,7 @@ body,
 }
 .book-shelf-changer:hover {
   transform: scale(1.1);
-  transform: rotate(360deg);
+  background-color: #cb4951;
 }
 .book-shelf-changer select {
   width: 100%;

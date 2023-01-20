@@ -50,9 +50,8 @@ const SearchPage = () => {
   }, [searchQuery]);
 
   const updateMyBooksShelf = (updatedBook: BookCardModel, newShelf: string) => {
-    myBooks.find((b) => b.id === updatedBook.id)
-      ? (myBooks.filter((b) => b.id === updatedBook.id)[0].shelf = newShelf)
-      : myBooks.push(updatedBook);
+    myBooks.find((b) => b.id === updatedBook.id) ? (myBooks.filter((b) => b.id === updatedBook.id)[0].shelf = newShelf) : myBooks.push(updatedBook);
+    
     setMyBooks(myBooks);
   };
 

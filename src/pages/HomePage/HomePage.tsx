@@ -8,13 +8,12 @@ import * as BooksAPI from "../../BooksAPI";
 import { BookCardModel } from "../../shared/models/myReads-models.model";
 
 const HomePage = () => {
-  const [currentlyReadingBooks, setCurrentlyReadingBooks] = useState<
-    (BookCardModel | never)[]
-  >([]);
   const [allBooks, setAllBooks] = useState<(BookCardModel | never)[]>([]);
-  const [wantToReadBooks, setWantToReadBooks] = useState<
-    (BookCardModel | never)[]
-  >([]);
+  
+  const [currentlyReadingBooks, setCurrentlyReadingBooks] = useState<(BookCardModel | never)[]>([]);
+
+  const [wantToReadBooks, setWantToReadBooks] = useState<(BookCardModel | never)[]>([]);
+
   const [readBooks, setReadBooks] = useState<(BookCardModel | never)[]>([]);
 
   const setAllShelfs = (allShelfs: BookCardModel[]) => {
